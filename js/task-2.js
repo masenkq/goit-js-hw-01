@@ -10,7 +10,7 @@
 // що включає вартість товару і його доставки
 
 function getShippingMessage(country, price, deliveryFree) {
-    const totalPrice = price * deliveryFree;
+    const totalPrice = price + deliveryFree;
     return `Shipping to ${country} will cost ${totalPrice} credits`;
 }
 console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
